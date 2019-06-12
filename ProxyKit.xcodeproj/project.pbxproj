@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C185A3D622B1359C00E11721 /* ProxyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C185A3D422B1359C00E11721 /* ProxyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C185A40D22B1369600E11721 /* ProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3DE22B1369600E11721 /* ProxyServer.swift */; };
+		C185A40E22B1369600E11721 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E022B1369600E11721 /* Pipe.swift */; };
+		C185A40F22B1369600E11721 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E122B1369600E11721 /* Helper.swift */; };
+		C185A41022B1369600E11721 /* DirectAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E422B1369600E11721 /* DirectAdapter.swift */; };
+		C185A41122B1369600E11721 /* AdapterSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E522B1369600E11721 /* AdapterSocket.swift */; };
+		C185A41222B1369600E11721 /* AdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E722B1369600E11721 /* AdapterFactory.swift */; };
+		C185A41322B1369600E11721 /* RawTCPSocketProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E822B1369600E11721 /* RawTCPSocketProtocol.swift */; };
+		C185A41422B1369600E11721 /* GCDTCPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E922B1369600E11721 /* GCDTCPSocket.swift */; };
+		C185A41522B1369600E11721 /* ProxySocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3EB22B1369600E11721 /* ProxySocket.swift */; };
+		C185A41622B1369600E11721 /* SocketProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3EC22B1369600E11721 /* SocketProtocol.swift */; };
+		C185A41722B1369600E11721 /* BinaryDataScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3EE22B1369600E11721 /* BinaryDataScanner.swift */; };
+		C185A41822B1369600E11721 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3EF22B1369600E11721 /* Utils.swift */; };
+		C185A41922B1369600E11721 /* IPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F022B1369600E11721 /* IPAddress.swift */; };
+		C185A41A22B1369600E11721 /* IPInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F122B1369600E11721 /* IPInterval.swift */; };
+		C185A41B22B1369600E11721 /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F222B1369600E11721 /* Checksum.swift */; };
+		C185A41C22B1369600E11721 /* IPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F322B1369600E11721 /* IPort.swift */; };
+		C185A41D22B1369600E11721 /* UInt128.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F422B1369600E11721 /* UInt128.swift */; };
+		C185A41E22B1369600E11721 /* GlobalIntializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F522B1369600E11721 /* GlobalIntializer.swift */; };
+		C185A41F22B1369600E11721 /* QueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F622B1369600E11721 /* QueueFactory.swift */; };
+		C185A42022B1369600E11721 /* Opt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F722B1369600E11721 /* Opt.swift */; };
+		C185A42122B1369600E11721 /* DNSSessionMatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F922B1369600E11721 /* DNSSessionMatchResult.swift */; };
+		C185A42222B1369600E11721 /* AllRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3FA22B1369600E11721 /* AllRule.swift */; };
+		C185A42322B1369600E11721 /* DNSSessionMatchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3FB22B1369600E11721 /* DNSSessionMatchType.swift */; };
+		C185A42422B1369600E11721 /* DirectRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3FC22B1369600E11721 /* DirectRule.swift */; };
+		C185A42522B1369600E11721 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3FD22B1369600E11721 /* Rule.swift */; };
+		C185A42622B1369600E11721 /* DNSEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3FF22B1369600E11721 /* DNSEnums.swift */; };
+		C185A42722B1369600E11721 /* IPPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40022B1369600E11721 /* IPPacket.swift */; };
+		C185A42822B1369600E11721 /* DNSMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40122B1369600E11721 /* DNSMessage.swift */; };
+		C185A42922B1369600E11721 /* PacketProtocolParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40222B1369600E11721 /* PacketProtocolParser.swift */; };
+		C185A42A22B1369600E11721 /* DNSSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40322B1369600E11721 /* DNSSession.swift */; };
+		C185A42B22B1369600E11721 /* ProxySocketEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40522B1369600E11721 /* ProxySocketEvent.swift */; };
+		C185A42C22B1369600E11721 /* PipeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40622B1369600E11721 /* PipeEvent.swift */; };
+		C185A42D22B1369600E11721 /* ProxyServerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40722B1369600E11721 /* ProxyServerEvent.swift */; };
+		C185A42E22B1369600E11721 /* RuleMatchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40822B1369600E11721 /* RuleMatchEvent.swift */; };
+		C185A42F22B1369600E11721 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40922B1369600E11721 /* Observer.swift */; };
+		C185A43022B1369600E11721 /* AdapterSocketEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40A22B1369600E11721 /* AdapterSocketEvent.swift */; };
+		C185A43122B1369600E11721 /* ObserverFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40B22B1369600E11721 /* ObserverFactory.swift */; };
+		C185A43222B1369600E11721 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40C22B1369600E11721 /* EventType.swift */; };
+		C185A43822B1398000E11721 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43422B1398000E11721 /* CocoaLumberjack.framework */; };
+		C185A43922B1398000E11721 /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43522B1398000E11721 /* Resolver.framework */; };
+		C185A43A22B1398000E11721 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43622B1398000E11721 /* CocoaAsyncSocket.framework */; };
+		C185A43B22B1398000E11721 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43722B1398000E11721 /* CocoaLumberjackSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C185A3D122B1359C00E11721 /* ProxyKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProxyKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C185A3D422B1359C00E11721 /* ProxyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyKit.h; sourceTree = "<group>"; };
+		C185A3D522B1359C00E11721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C185A3DE22B1369600E11721 /* ProxyServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyServer.swift; sourceTree = "<group>"; };
+		C185A3E022B1369600E11721 /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		C185A3E122B1369600E11721 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		C185A3E422B1369600E11721 /* DirectAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectAdapter.swift; sourceTree = "<group>"; };
+		C185A3E522B1369600E11721 /* AdapterSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSocket.swift; sourceTree = "<group>"; };
+		C185A3E722B1369600E11721 /* AdapterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterFactory.swift; sourceTree = "<group>"; };
+		C185A3E822B1369600E11721 /* RawTCPSocketProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawTCPSocketProtocol.swift; sourceTree = "<group>"; };
+		C185A3E922B1369600E11721 /* GCDTCPSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDTCPSocket.swift; sourceTree = "<group>"; };
+		C185A3EB22B1369600E11721 /* ProxySocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySocket.swift; sourceTree = "<group>"; };
+		C185A3EC22B1369600E11721 /* SocketProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketProtocol.swift; sourceTree = "<group>"; };
+		C185A3EE22B1369600E11721 /* BinaryDataScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryDataScanner.swift; sourceTree = "<group>"; };
+		C185A3EF22B1369600E11721 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C185A3F022B1369600E11721 /* IPAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddress.swift; sourceTree = "<group>"; };
+		C185A3F122B1369600E11721 /* IPInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPInterval.swift; sourceTree = "<group>"; };
+		C185A3F222B1369600E11721 /* Checksum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
+		C185A3F322B1369600E11721 /* IPort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPort.swift; sourceTree = "<group>"; };
+		C185A3F422B1369600E11721 /* UInt128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UInt128.swift; sourceTree = "<group>"; };
+		C185A3F522B1369600E11721 /* GlobalIntializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalIntializer.swift; sourceTree = "<group>"; };
+		C185A3F622B1369600E11721 /* QueueFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueFactory.swift; sourceTree = "<group>"; };
+		C185A3F722B1369600E11721 /* Opt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Opt.swift; sourceTree = "<group>"; };
+		C185A3F922B1369600E11721 /* DNSSessionMatchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSSessionMatchResult.swift; sourceTree = "<group>"; };
+		C185A3FA22B1369600E11721 /* AllRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRule.swift; sourceTree = "<group>"; };
+		C185A3FB22B1369600E11721 /* DNSSessionMatchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSSessionMatchType.swift; sourceTree = "<group>"; };
+		C185A3FC22B1369600E11721 /* DirectRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectRule.swift; sourceTree = "<group>"; };
+		C185A3FD22B1369600E11721 /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		C185A3FF22B1369600E11721 /* DNSEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSEnums.swift; sourceTree = "<group>"; };
+		C185A40022B1369600E11721 /* IPPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPPacket.swift; sourceTree = "<group>"; };
+		C185A40122B1369600E11721 /* DNSMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSMessage.swift; sourceTree = "<group>"; };
+		C185A40222B1369600E11721 /* PacketProtocolParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketProtocolParser.swift; sourceTree = "<group>"; };
+		C185A40322B1369600E11721 /* DNSSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSSession.swift; sourceTree = "<group>"; };
+		C185A40522B1369600E11721 /* ProxySocketEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySocketEvent.swift; sourceTree = "<group>"; };
+		C185A40622B1369600E11721 /* PipeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PipeEvent.swift; sourceTree = "<group>"; };
+		C185A40722B1369600E11721 /* ProxyServerEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyServerEvent.swift; sourceTree = "<group>"; };
+		C185A40822B1369600E11721 /* RuleMatchEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleMatchEvent.swift; sourceTree = "<group>"; };
+		C185A40922B1369600E11721 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		C185A40A22B1369600E11721 /* AdapterSocketEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSocketEvent.swift; sourceTree = "<group>"; };
+		C185A40B22B1369600E11721 /* ObserverFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverFactory.swift; sourceTree = "<group>"; };
+		C185A40C22B1369600E11721 /* EventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		C185A43422B1398000E11721 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		C185A43522B1398000E11721 /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = Carthage/Build/iOS/Resolver.framework; sourceTree = "<group>"; };
+		C185A43622B1398000E11721 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		C185A43722B1398000E11721 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C185A3CE22B1359C00E11721 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C185A43822B1398000E11721 /* CocoaLumberjack.framework in Frameworks */,
+				C185A43922B1398000E11721 /* Resolver.framework in Frameworks */,
+				C185A43A22B1398000E11721 /* CocoaAsyncSocket.framework in Frameworks */,
+				C185A43B22B1398000E11721 /* CocoaLumberjackSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C185A3C722B1359C00E11721 = {
+			isa = PBXGroup;
+			children = (
+				C185A3DC22B1369600E11721 /* src */,
+				C185A3D322B1359C00E11721 /* ProxyKit */,
+				C185A3D222B1359C00E11721 /* Products */,
+				C185A43322B1398000E11721 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C185A3D222B1359C00E11721 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C185A3D122B1359C00E11721 /* ProxyKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C185A3D322B1359C00E11721 /* ProxyKit */ = {
+			isa = PBXGroup;
+			children = (
+				C185A3D422B1359C00E11721 /* ProxyKit.h */,
+				C185A3D522B1359C00E11721 /* Info.plist */,
+			);
+			path = ProxyKit;
+			sourceTree = "<group>";
+		};
+		C185A3DC22B1369600E11721 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C185A3FE22B1369600E11721 /* DNSSession */,
+				C185A40422B1369600E11721 /* Event */,
+				C185A3DF22B1369600E11721 /* Pipe */,
+				C185A3DD22B1369600E11721 /* ProxyServer */,
+				C185A3F822B1369600E11721 /* Rule */,
+				C185A3E222B1369600E11721 /* Socket */,
+				C185A3ED22B1369600E11721 /* Utils */,
+				C185A3F722B1369600E11721 /* Opt.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C185A3DD22B1369600E11721 /* ProxyServer */ = {
+			isa = PBXGroup;
+			children = (
+				C185A3DE22B1369600E11721 /* ProxyServer.swift */,
+			);
+			path = ProxyServer;
+			sourceTree = "<group>";
+		};
+		C185A3DF22B1369600E11721 /* Pipe */ = {
+			isa = PBXGroup;
+			children = (
+				C185A3E022B1369600E11721 /* Pipe.swift */,
+				C185A3E122B1369600E11721 /* Helper.swift */,
+			);
+			path = Pipe;
+			sourceTree = "<group>";
+		};
+		C185A3E222B1369600E11721 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				C185A3E322B1369600E11721 /* AdapterSocket */,
+				C185A3EA22B1369600E11721 /* ProxySocket */,
+				C185A3E822B1369600E11721 /* RawTCPSocketProtocol.swift */,
+				C185A3EC22B1369600E11721 /* SocketProtocol.swift */,
+				C185A3E922B1369600E11721 /* GCDTCPSocket.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		C185A3E322B1369600E11721 /* AdapterSocket */ = {
+			isa = PBXGroup;
+			children = (
+				C185A3E522B1369600E11721 /* AdapterSocket.swift */,
+				C185A3E422B1369600E11721 /* DirectAdapter.swift */,
+				C185A3E622B1369600E11721 /* Factory */,
+			);
+			path = AdapterSocket;
+			sourceTree = "<group>";
+		};
+		C185A3E622B1369600E11721 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				C185A3E722B1369600E11721 /* AdapterFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		C185A3EA22B1369600E11721 /* ProxySocket */ = {
+			isa = PBXGroup;
+			children = (
+				C185A3EB22B1369600E11721 /* ProxySocket.swift */,
+			);
+			path = ProxySocket;
+			sourceTree = "<group>";
+		};
+		C185A3ED22B1369600E11721 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C185A3EE22B1369600E11721 /* BinaryDataScanner.swift */,
+				C185A3EF22B1369600E11721 /* Utils.swift */,
+				C185A3F022B1369600E11721 /* IPAddress.swift */,
+				C185A3F122B1369600E11721 /* IPInterval.swift */,
+				C185A3F222B1369600E11721 /* Checksum.swift */,
+				C185A3F322B1369600E11721 /* IPort.swift */,
+				C185A3F422B1369600E11721 /* UInt128.swift */,
+				C185A3F522B1369600E11721 /* GlobalIntializer.swift */,
+				C185A3F622B1369600E11721 /* QueueFactory.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C185A3F822B1369600E11721 /* Rule */ = {
+			isa = PBXGroup;
+			children = (
+				C185A3F922B1369600E11721 /* DNSSessionMatchResult.swift */,
+				C185A3FB22B1369600E11721 /* DNSSessionMatchType.swift */,
+				C185A3FD22B1369600E11721 /* Rule.swift */,
+				C185A3FA22B1369600E11721 /* AllRule.swift */,
+				C185A3FC22B1369600E11721 /* DirectRule.swift */,
+			);
+			path = Rule;
+			sourceTree = "<group>";
+		};
+		C185A3FE22B1369600E11721 /* DNSSession */ = {
+			isa = PBXGroup;
+			children = (
+				C185A40322B1369600E11721 /* DNSSession.swift */,
+				C185A3FF22B1369600E11721 /* DNSEnums.swift */,
+				C185A40122B1369600E11721 /* DNSMessage.swift */,
+				C185A40022B1369600E11721 /* IPPacket.swift */,
+				C185A40222B1369600E11721 /* PacketProtocolParser.swift */,
+			);
+			path = DNSSession;
+			sourceTree = "<group>";
+		};
+		C185A40422B1369600E11721 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				C185A40A22B1369600E11721 /* AdapterSocketEvent.swift */,
+				C185A40622B1369600E11721 /* PipeEvent.swift */,
+				C185A40722B1369600E11721 /* ProxyServerEvent.swift */,
+				C185A40522B1369600E11721 /* ProxySocketEvent.swift */,
+				C185A40822B1369600E11721 /* RuleMatchEvent.swift */,
+				C185A40C22B1369600E11721 /* EventType.swift */,
+				C185A40922B1369600E11721 /* Observer.swift */,
+				C185A40B22B1369600E11721 /* ObserverFactory.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		C185A43322B1398000E11721 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C185A43622B1398000E11721 /* CocoaAsyncSocket.framework */,
+				C185A43422B1398000E11721 /* CocoaLumberjack.framework */,
+				C185A43722B1398000E11721 /* CocoaLumberjackSwift.framework */,
+				C185A43522B1398000E11721 /* Resolver.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C185A3CC22B1359C00E11721 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C185A3D622B1359C00E11721 /* ProxyKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C185A3D022B1359C00E11721 /* ProxyKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C185A3D922B1359C00E11721 /* Build configuration list for PBXNativeTarget "ProxyKit" */;
+			buildPhases = (
+				C185A3CC22B1359C00E11721 /* Headers */,
+				C185A3CD22B1359C00E11721 /* Sources */,
+				C185A3CE22B1359C00E11721 /* Frameworks */,
+				C185A3CF22B1359C00E11721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProxyKit;
+			productName = ProxyKit;
+			productReference = C185A3D122B1359C00E11721 /* ProxyKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C185A3C822B1359C00E11721 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "NEKit-NG Dev";
+				TargetAttributes = {
+					C185A3D022B1359C00E11721 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C185A3CB22B1359C00E11721 /* Build configuration list for PBXProject "ProxyKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C185A3C722B1359C00E11721;
+			productRefGroup = C185A3D222B1359C00E11721 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C185A3D022B1359C00E11721 /* ProxyKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C185A3CF22B1359C00E11721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C185A3CD22B1359C00E11721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C185A41922B1369600E11721 /* IPAddress.swift in Sources */,
+				C185A41B22B1369600E11721 /* Checksum.swift in Sources */,
+				C185A41122B1369600E11721 /* AdapterSocket.swift in Sources */,
+				C185A42122B1369600E11721 /* DNSSessionMatchResult.swift in Sources */,
+				C185A42622B1369600E11721 /* DNSEnums.swift in Sources */,
+				C185A42822B1369600E11721 /* DNSMessage.swift in Sources */,
+				C185A42022B1369600E11721 /* Opt.swift in Sources */,
+				C185A43022B1369600E11721 /* AdapterSocketEvent.swift in Sources */,
+				C185A40D22B1369600E11721 /* ProxyServer.swift in Sources */,
+				C185A42522B1369600E11721 /* Rule.swift in Sources */,
+				C185A42422B1369600E11721 /* DirectRule.swift in Sources */,
+				C185A41C22B1369600E11721 /* IPort.swift in Sources */,
+				C185A41722B1369600E11721 /* BinaryDataScanner.swift in Sources */,
+				C185A42E22B1369600E11721 /* RuleMatchEvent.swift in Sources */,
+				C185A41622B1369600E11721 /* SocketProtocol.swift in Sources */,
+				C185A41322B1369600E11721 /* RawTCPSocketProtocol.swift in Sources */,
+				C185A41422B1369600E11721 /* GCDTCPSocket.swift in Sources */,
+				C185A42D22B1369600E11721 /* ProxyServerEvent.swift in Sources */,
+				C185A41A22B1369600E11721 /* IPInterval.swift in Sources */,
+				C185A42A22B1369600E11721 /* DNSSession.swift in Sources */,
+				C185A40E22B1369600E11721 /* Pipe.swift in Sources */,
+				C185A41022B1369600E11721 /* DirectAdapter.swift in Sources */,
+				C185A41D22B1369600E11721 /* UInt128.swift in Sources */,
+				C185A42922B1369600E11721 /* PacketProtocolParser.swift in Sources */,
+				C185A43122B1369600E11721 /* ObserverFactory.swift in Sources */,
+				C185A41522B1369600E11721 /* ProxySocket.swift in Sources */,
+				C185A41222B1369600E11721 /* AdapterFactory.swift in Sources */,
+				C185A42222B1369600E11721 /* AllRule.swift in Sources */,
+				C185A42F22B1369600E11721 /* Observer.swift in Sources */,
+				C185A41E22B1369600E11721 /* GlobalIntializer.swift in Sources */,
+				C185A40F22B1369600E11721 /* Helper.swift in Sources */,
+				C185A42C22B1369600E11721 /* PipeEvent.swift in Sources */,
+				C185A43222B1369600E11721 /* EventType.swift in Sources */,
+				C185A41822B1369600E11721 /* Utils.swift in Sources */,
+				C185A42722B1369600E11721 /* IPPacket.swift in Sources */,
+				C185A42B22B1369600E11721 /* ProxySocketEvent.swift in Sources */,
+				C185A41F22B1369600E11721 /* QueueFactory.swift in Sources */,
+				C185A42322B1369600E11721 /* DNSSessionMatchType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C185A3D722B1359C00E11721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C185A3D822B1359C00E11721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C185A3DA22B1359C00E11721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ProxyKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ng.nekit.ProxyKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C185A3DB22B1359C00E11721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ProxyKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ng.nekit.ProxyKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C185A3CB22B1359C00E11721 /* Build configuration list for PBXProject "ProxyKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C185A3D722B1359C00E11721 /* Debug */,
+				C185A3D822B1359C00E11721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C185A3D922B1359C00E11721 /* Build configuration list for PBXNativeTarget "ProxyKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C185A3DA22B1359C00E11721 /* Debug */,
+				C185A3DB22B1359C00E11721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C185A3C822B1359C00E11721 /* Project object */;
+}
