@@ -11,7 +11,7 @@ open class ProxyServer: NSObject, PipeDelegate {
     typealias PipeArray = [Pipe]
 
     /// The port of proxy server.
-    public let port: Port
+    public let port: IPort
 
     /// The address of proxy server.
     public let address: IPAddress?
@@ -38,7 +38,7 @@ open class ProxyServer: NSObject, PipeDelegate {
      
      - warning: If you are using Network Extension, you have to set address or you may not able to connect to the proxy server.
      */
-    public init(address: IPAddress?, port: Port) {
+    public init(address: IPAddress?, port: IPort) {
         self.address = address
         self.port = port
         type = "\(Swift.type(of: self))"
