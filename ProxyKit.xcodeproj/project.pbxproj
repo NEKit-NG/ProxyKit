@@ -58,6 +58,11 @@
 		C185A43922B1398000E11721 /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43522B1398000E11721 /* Resolver.framework */; };
 		C185A43A22B1398000E11721 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43622B1398000E11721 /* CocoaAsyncSocket.framework */; };
 		C185A43B22B1398000E11721 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43722B1398000E11721 /* CocoaLumberjackSwift.framework */; };
+		C1F7B01122B27C080059443F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7B01022B27C080059443F /* AppDelegate.swift */; };
+		C1F7B01322B27C080059443F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7B01222B27C080059443F /* ViewController.swift */; };
+		C1F7B01622B27C090059443F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F7B01422B27C080059443F /* Main.storyboard */; };
+		C1F7B01822B27C0A0059443F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F7B01722B27C0A0059443F /* Assets.xcassets */; };
+		C1F7B01B22B27C0A0059443F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F7B01922B27C0A0059443F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +119,13 @@
 		C185A43522B1398000E11721 /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = Carthage/Build/iOS/Resolver.framework; sourceTree = "<group>"; };
 		C185A43622B1398000E11721 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		C185A43722B1398000E11721 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		C1F7B00E22B27C080059443F /* ProxyKit-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProxyKit-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F7B01022B27C080059443F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1F7B01222B27C080059443F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1F7B01522B27C080059443F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1F7B01722B27C0A0059443F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1F7B01A22B27C0A0059443F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1F7B01C22B27C0A0059443F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +137,13 @@
 				C185A43922B1398000E11721 /* Resolver.framework in Frameworks */,
 				C185A43A22B1398000E11721 /* CocoaAsyncSocket.framework in Frameworks */,
 				C185A43B22B1398000E11721 /* CocoaLumberjackSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1F7B00B22B27C080059443F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +190,7 @@
 				50DF435F22B20F4600B8D9FA /* proxy */,
 				C185A3DC22B1369600E11721 /* src */,
 				C185A3D322B1359C00E11721 /* ProxyKit */,
+				C1F7B00F22B27C080059443F /* ProxyKit-Demo */,
 				C185A3D222B1359C00E11721 /* Products */,
 				C185A43322B1398000E11721 /* Frameworks */,
 			);
@@ -180,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				C185A3D122B1359C00E11721 /* ProxyKit.framework */,
+				C1F7B00E22B27C080059443F /* ProxyKit-Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -326,6 +347,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C1F7B00F22B27C080059443F /* ProxyKit-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C1F7B01022B27C080059443F /* AppDelegate.swift */,
+				C1F7B01222B27C080059443F /* ViewController.swift */,
+				C1F7B01422B27C080059443F /* Main.storyboard */,
+				C1F7B01722B27C0A0059443F /* Assets.xcassets */,
+				C1F7B01922B27C0A0059443F /* LaunchScreen.storyboard */,
+				C1F7B01C22B27C0A0059443F /* Info.plist */,
+			);
+			path = "ProxyKit-Demo";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -358,16 +392,37 @@
 			productReference = C185A3D122B1359C00E11721 /* ProxyKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C1F7B00D22B27C080059443F /* ProxyKit-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1F7B01F22B27C0A0059443F /* Build configuration list for PBXNativeTarget "ProxyKit-Demo" */;
+			buildPhases = (
+				C1F7B00A22B27C080059443F /* Sources */,
+				C1F7B00B22B27C080059443F /* Frameworks */,
+				C1F7B00C22B27C080059443F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ProxyKit-Demo";
+			productName = "ProxyKit-Demo";
+			productReference = C1F7B00E22B27C080059443F /* ProxyKit-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C185A3C822B1359C00E11721 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "NEKit-NG Dev";
 				TargetAttributes = {
 					C185A3D022B1359C00E11721 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					C1F7B00D22B27C080059443F = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -378,6 +433,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = C185A3C722B1359C00E11721;
 			productRefGroup = C185A3D222B1359C00E11721 /* Products */;
@@ -385,6 +441,7 @@
 			projectRoot = "";
 			targets = (
 				C185A3D022B1359C00E11721 /* ProxyKit */,
+				C1F7B00D22B27C080059443F /* ProxyKit-Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -394,6 +451,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1F7B00C22B27C080059443F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1F7B01B22B27C0A0059443F /* LaunchScreen.storyboard in Resources */,
+				C1F7B01822B27C0A0059443F /* Assets.xcassets in Resources */,
+				C1F7B01622B27C090059443F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +520,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1F7B00A22B27C080059443F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1F7B01322B27C080059443F /* ViewController.swift in Sources */,
+				C1F7B01122B27C080059443F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C1F7B01422B27C080059443F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1F7B01522B27C080059443F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1F7B01922B27C0A0059443F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1F7B01A22B27C0A0059443F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C185A3D722B1359C00E11721 /* Debug */ = {
@@ -634,6 +729,40 @@
 			};
 			name = Release;
 		};
+		C1F7B01D22B27C0A0059443F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ProxyKit-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.nekit.ProxyKit-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1F7B01E22B27C0A0059443F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ProxyKit-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ng.nekit.ProxyKit-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -651,6 +780,15 @@
 			buildConfigurations = (
 				C185A3DA22B1359C00E11721 /* Debug */,
 				C185A3DB22B1359C00E11721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1F7B01F22B27C0A0059443F /* Build configuration list for PBXNativeTarget "ProxyKit-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1F7B01D22B27C0A0059443F /* Debug */,
+				C1F7B01E22B27C0A0059443F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
