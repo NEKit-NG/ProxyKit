@@ -115,6 +115,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50DF435E22B20D1A00B8D9FA /* Packet */ = {
+			isa = PBXGroup;
+			children = (
+				C185A40022B1369600E11721 /* IPPacket.swift */,
+				C185A40222B1369600E11721 /* PacketProtocolParser.swift */,
+				C185A3EE22B1369600E11721 /* BinaryDataScanner.swift */,
+				C185A3F222B1369600E11721 /* Checksum.swift */,
+			);
+			path = Packet;
+			sourceTree = "<group>";
+		};
 		C185A3C722B1359C00E11721 = {
 			isa = PBXGroup;
 			children = (
@@ -215,11 +226,9 @@
 		C185A3ED22B1369600E11721 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				C185A3EE22B1369600E11721 /* BinaryDataScanner.swift */,
 				C185A3EF22B1369600E11721 /* Utils.swift */,
 				C185A3F022B1369600E11721 /* IPAddress.swift */,
 				C185A3F122B1369600E11721 /* IPInterval.swift */,
-				C185A3F222B1369600E11721 /* Checksum.swift */,
 				C185A3F322B1369600E11721 /* IPort.swift */,
 				C185A3F422B1369600E11721 /* UInt128.swift */,
 				C185A3F522B1369600E11721 /* GlobalIntializer.swift */,
@@ -243,11 +252,10 @@
 		C185A3FE22B1369600E11721 /* DNSSession */ = {
 			isa = PBXGroup;
 			children = (
+				50DF435E22B20D1A00B8D9FA /* Packet */,
 				C185A40322B1369600E11721 /* DNSSession.swift */,
 				C185A3FF22B1369600E11721 /* DNSEnums.swift */,
 				C185A40122B1369600E11721 /* DNSMessage.swift */,
-				C185A40022B1369600E11721 /* IPPacket.swift */,
-				C185A40222B1369600E11721 /* PacketProtocolParser.swift */,
 			);
 			path = DNSSession;
 			sourceTree = "<group>";
