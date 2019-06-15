@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -58,6 +58,9 @@
 		C185A43922B1398000E11721 /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43522B1398000E11721 /* Resolver.framework */; };
 		C185A43A22B1398000E11721 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43622B1398000E11721 /* CocoaAsyncSocket.framework */; };
 		C185A43B22B1398000E11721 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43722B1398000E11721 /* CocoaLumberjackSwift.framework */; };
+		C1ECDA4122B48A13007E5C8C /* ProxyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A3D122B1359C00E11721 /* ProxyKit.framework */; };
+		C1ECDA4322B49061007E5C8C /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43422B1398000E11721 /* CocoaLumberjack.framework */; };
+		C1ECDA4422B49061007E5C8C /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C185A43722B1398000E11721 /* CocoaLumberjackSwift.framework */; };
 		C1F7B01122B27C080059443F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7B01022B27C080059443F /* AppDelegate.swift */; };
 		C1F7B01322B27C080059443F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F7B01222B27C080059443F /* ViewController.swift */; };
 		C1F7B01622B27C090059443F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F7B01422B27C080059443F /* Main.storyboard */; };
@@ -144,6 +147,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1ECDA4322B49061007E5C8C /* CocoaLumberjack.framework in Frameworks */,
+				C1ECDA4422B49061007E5C8C /* CocoaLumberjackSwift.framework in Frameworks */,
+				C1ECDA4122B48A13007E5C8C /* ProxyKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +405,7 @@
 				C1F7B00A22B27C080059443F /* Sources */,
 				C1F7B00B22B27C080059443F /* Frameworks */,
 				C1F7B00C22B27C080059443F /* Resources */,
+				C1ECDA4222B48D69007E5C8C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -465,6 +472,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C1ECDA4222B48D69007E5C8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/ProxyKit-Demo/input.xcfilelist",
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+				"$(SRCROOT)/ProxyKit-Demo/output.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C185A3CD22B1359C00E11721 /* Sources */ = {
@@ -688,6 +717,7 @@
 				);
 				INFOPLIST_FILE = ProxyKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -716,6 +746,7 @@
 				);
 				INFOPLIST_FILE = ProxyKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -734,7 +765,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ProxyKit-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -751,7 +787,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ProxyKit-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,15 +7,23 @@
 //
 
 import UIKit
+import ProxyKit
+import CocoaLumberjackSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var httpProxy: GCDHTTPProxyServer?
+    var socks5Proxy: GCDSOCKS5ProxyServer?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        DDLog.add(DDOSLogger.sharedInstance, with: .verbose)
+        httpProxy = GCDHTTPProxyServer(address: nil, port: IPort(port: 8118))
+        try! httpProxy!.start()
+        socks5Proxy = GCDSOCKS5ProxyServer(address: nil, port: IPort(port: 1080))
+        try! socks5Proxy!.start()
         return true
     }
 

@@ -1,0 +1,4 @@
+$(SRCROOT)/Carthage/Build/iOS/Resolver.framework
+$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework
+$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework
+$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework
