@@ -65,7 +65,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   合并成 Helper.swift 放在 Pipe 目录下。这些都是将来需要扩展的功能
 
 * 假定您在同一个目录下同时 clone 了 NEKit 和 ProxyKit，可以在 ProxyKit 下执行脚本来对比
-  异同：sh script/diff.sh ../NEKit
+  异同：sh script/diff.sh
 
 ## 第三部分：上手
 
@@ -73,10 +73,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 * 然后在 Xcode 中编译 ProxyKit target
 
-* 最后编译 ProxyKit-Demo 项目，在模拟器中运行。它将在本机启动一个 HTTP 代理和一个 Socks5
-  代理
+* 最后编译 ProxyKit-Demo 项目，在模拟器中运行。它将启动一个 HTTP 代理和一个 Socks5 代理
+  运行在模拟器上。本机或者局域网内的应用配置一下就能通过这个模拟器转发流量了！
 
 ## 第四部分：代码基础解读
+
+* src 和 proxy 两个目录是所有源代码；极致精简的话，仅仅 src 目录就可以是基础 framework 
+  了，但还是加入了 proxy 目录让 ProxyKit-Demo 能更有实际作用一些
 
 * 网络(TCP层或应用层)每成功建立一条代理路径，在代码里就是创建了一个 Pipe，Pipe 的两头分别是
   ProxySocket 和 AdapterSocket
