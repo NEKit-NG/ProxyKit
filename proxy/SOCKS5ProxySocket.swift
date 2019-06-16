@@ -223,7 +223,7 @@ public class SOCKS5ProxySocket: ProxySocket {
     }
 
     /**
-     Response to the `AdapterSocket` on the other side of the `Tunnel` which has succefully connected to the remote server.
+     Response to the `AdapterSocket` on the other side of the `Pipe` which has succefully connected to the remote server.
      
      - parameter adapter: The `AdapterSocket`.
      */
