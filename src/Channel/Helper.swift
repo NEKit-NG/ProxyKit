@@ -20,6 +20,9 @@ open class ConnectSession {
     /// The requested port.
     public let port: Int
 
+    /// The rule to use to connect to remote.
+    public var matchedRule: Rule?
+
     public var error: Error?
     public var errorSource: EventSourceEnum?
     public var disconnectedBy: EventSourceEnum?
@@ -112,7 +115,22 @@ open class RuleManager {
      - returns: The matched configured adapter.
      */
     func match(_ session: ConnectSession) -> AdapterFactory! {
-        return DirectAdapterFactory()
+        if session.matchedRule != nil {
+            observer?.signal(.ruleMatched(session, rule: session.matchedRule!))
+            return session.matchedRule!.match(session)
+        }
+
+        for rule in rules {
+            if let adapterFactory = rule.match(session) {
+                observer?.signal(.ruleMatched(session, rule: rule))
+
+                session.matchedRule = rule
+                return adapterFactory
+            } else {
+                observer?.signal(.ruleDidNotMatch(session, rule: rule))
+            }
+        }
+        return nil // this should never happens
     }
 }
 
