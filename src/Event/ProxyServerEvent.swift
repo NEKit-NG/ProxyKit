@@ -5,8 +5,8 @@ public enum ProxyServerEvent: EventType {
         switch self {
         case let .newSocketAccepted(socket, onServer: server):
             return "Proxy server \(server) just accepted a new socket \(socket)."
-        case let .pipeClosed(pipe, onServer: server):
-            return "A pipe \(pipe) on proxy server \(server) just closed."
+        case let .channelClosed(channel, onServer: server):
+            return "A channel \(channel) on proxy server \(server) just closed."
         case .started(let server):
             return "Proxy server \(server) started."
         case .stopped(let server):
@@ -14,5 +14,5 @@ public enum ProxyServerEvent: EventType {
         }
     }
 
-    case newSocketAccepted(ProxySocket, onServer: ProxyServer), pipeClosed(Pipe, onServer: ProxyServer), started(ProxyServer), stopped(ProxyServer)
+    case newSocketAccepted(ProxySocket, onServer: ProxyServer), channelClosed(Channel, onServer: ProxyServer), started(ProxyServer), stopped(ProxyServer)
 }

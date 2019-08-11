@@ -184,7 +184,7 @@ public class HTTPProxySocket: ProxySocket {
     }
     
     /**
-     Response to the `AdapterSocket` on the other side of the `Pipe` which has succefully connected to the remote server.
+     Response to the `AdapterSocket` on the other side of the `Channel` which has succefully connected to the remote server.
      
      - parameter adapter: The `AdapterSocket`.
      */

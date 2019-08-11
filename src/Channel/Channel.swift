@@ -1,15 +1,15 @@
 import Foundation
 import Resolver
 
-protocol PipeDelegate : class {
-    func pipeDidClose(_ pipe: Pipe)
+protocol ChannelDelegate : class {
+    func channelDidClose(_ channel: Channel)
 }
 
-/// The pipe forwards data between local and remote.
-public class Pipe: NSObject, SocketDelegate {
+/// The channel forwards data between local and remote.
+public class Channel: NSObject, SocketDelegate {
     
-    /// The status of `Pipe`.
-    public enum PipeStatus: CustomStringConvertible {
+    /// The status of `Channel`.
+    public enum ChannelStatus: CustomStringConvertible {
         
         case invalid, readingRequest, waitingToBeReady, forwarding, closing, closed
         
@@ -38,14 +38,14 @@ public class Pipe: NSObject, SocketDelegate {
     var adapterSocket: AdapterSocket?
     
     /// The delegate instance.
-    weak var delegate: PipeDelegate?
+    weak var delegate: ChannelDelegate?
     
-    var observer: Observer<PipeEvent>?
+    var observer: Observer<ChannelEvent>?
     
     /// Indicating how many socket is ready to forward data.
     private var readySignal = 0
     
-    /// If the pipe is closed, i.e., proxy socket and adapter socket are both disconnected.
+    /// If the channel is closed, i.e., proxy socket and adapter socket are both disconnected.
     var isClosed: Bool {
         return proxySocket.isDisconnected && (adapterSocket?.isDisconnected ?? true)
     }
@@ -56,8 +56,8 @@ public class Pipe: NSObject, SocketDelegate {
         return _cancelled
     }
     
-    fileprivate var _status: PipeStatus = .invalid
-    public var status: PipeStatus {
+    fileprivate var _status: ChannelStatus = .invalid
+    public var status: ChannelStatus {
         return _status
     }
     
@@ -67,9 +67,9 @@ public class Pipe: NSObject, SocketDelegate {
     
     override public var description: String {
         if let adapterSocket = adapterSocket {
-            return "<Pipe proxySocket:\(proxySocket) adapterSocket:\(adapterSocket)>"
+            return "<Channel proxySocket:\(proxySocket) adapterSocket:\(adapterSocket)>"
         } else {
-            return "<Pipe proxySocket:\(proxySocket)>"
+            return "<Channel proxySocket:\(proxySocket)>"
         }
     }
     
@@ -78,13 +78,13 @@ public class Pipe: NSObject, SocketDelegate {
         super.init()
         self.proxySocket.delegate = self
         
-        self.observer = ObserverFactory.currentFactory?.getObserverForPipe(self)
+        self.observer = ObserverFactory.currentFactory?.getObserverForChannel(self)
     }
     
     /**
-     Start running the pipe.
+     Start running the channel.
      */
-    func openPipe() {
+    func openChannel() {
         guard !self.isCancelled else {
             return
         }
@@ -95,7 +95,7 @@ public class Pipe: NSObject, SocketDelegate {
     }
     
     /**
-     Close the pipe elegantly.
+     Close the channel elegantly.
      */
     func close() {
         observer?.signal(.closeCalled(self))
@@ -117,7 +117,7 @@ public class Pipe: NSObject, SocketDelegate {
         }
     }
     
-    /// Close the pipe immediately.
+    /// Close the channel immediately.
     ///
     /// - note: This method is thread-safe.
     func forceClose() {
@@ -268,7 +268,7 @@ public class Pipe: NSObject, SocketDelegate {
         if isClosed {
             _status = .closed
             observer?.signal(.closed(self))
-            delegate?.pipeDidClose(self)
+            delegate?.channelDidClose(self)
             delegate = nil
         }
     }

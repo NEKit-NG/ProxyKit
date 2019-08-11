@@ -17,7 +17,7 @@
 		50DF437022B2232A00B8D9FA /* HTTPURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF436F22B2232A00B8D9FA /* HTTPURL.swift */; };
 		C185A3D622B1359C00E11721 /* ProxyKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C185A3D422B1359C00E11721 /* ProxyKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C185A40D22B1369600E11721 /* ProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3DE22B1369600E11721 /* ProxyServer.swift */; };
-		C185A40E22B1369600E11721 /* Pipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E022B1369600E11721 /* Pipe.swift */; };
+		C185A40E22B1369600E11721 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E022B1369600E11721 /* Channel.swift */; };
 		C185A40F22B1369600E11721 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E122B1369600E11721 /* Helper.swift */; };
 		C185A41022B1369600E11721 /* DirectAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E422B1369600E11721 /* DirectAdapter.swift */; };
 		C185A41122B1369600E11721 /* AdapterSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E522B1369600E11721 /* AdapterSocket.swift */; };
@@ -47,7 +47,7 @@
 		C185A42922B1369600E11721 /* PacketProtocolParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40222B1369600E11721 /* PacketProtocolParser.swift */; };
 		C185A42A22B1369600E11721 /* DNSSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40322B1369600E11721 /* DNSSession.swift */; };
 		C185A42B22B1369600E11721 /* ProxySocketEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40522B1369600E11721 /* ProxySocketEvent.swift */; };
-		C185A42C22B1369600E11721 /* PipeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40622B1369600E11721 /* PipeEvent.swift */; };
+		C185A42C22B1369600E11721 /* ChannelEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40622B1369600E11721 /* ChannelEvent.swift */; };
 		C185A42D22B1369600E11721 /* ProxyServerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40722B1369600E11721 /* ProxyServerEvent.swift */; };
 		C185A42E22B1369600E11721 /* RuleMatchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40822B1369600E11721 /* RuleMatchEvent.swift */; };
 		C185A42F22B1369600E11721 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40922B1369600E11721 /* Observer.swift */; };
@@ -81,7 +81,7 @@
 		C185A3D422B1359C00E11721 /* ProxyKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProxyKit.h; sourceTree = "<group>"; };
 		C185A3D522B1359C00E11721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C185A3DE22B1369600E11721 /* ProxyServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyServer.swift; sourceTree = "<group>"; };
-		C185A3E022B1369600E11721 /* Pipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pipe.swift; sourceTree = "<group>"; };
+		C185A3E022B1369600E11721 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		C185A3E122B1369600E11721 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		C185A3E422B1369600E11721 /* DirectAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectAdapter.swift; sourceTree = "<group>"; };
 		C185A3E522B1369600E11721 /* AdapterSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdapterSocket.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		C185A40222B1369600E11721 /* PacketProtocolParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketProtocolParser.swift; sourceTree = "<group>"; };
 		C185A40322B1369600E11721 /* DNSSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSSession.swift; sourceTree = "<group>"; };
 		C185A40522B1369600E11721 /* ProxySocketEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySocketEvent.swift; sourceTree = "<group>"; };
-		C185A40622B1369600E11721 /* PipeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PipeEvent.swift; sourceTree = "<group>"; };
+		C185A40622B1369600E11721 /* ChannelEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelEvent.swift; sourceTree = "<group>"; };
 		C185A40722B1369600E11721 /* ProxyServerEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyServerEvent.swift; sourceTree = "<group>"; };
 		C185A40822B1369600E11721 /* RuleMatchEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleMatchEvent.swift; sourceTree = "<group>"; };
 		C185A40922B1369600E11721 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
@@ -225,7 +225,7 @@
 			children = (
 				C185A3FE22B1369600E11721 /* DNSSession */,
 				C185A40422B1369600E11721 /* Event */,
-				C185A3DF22B1369600E11721 /* Pipe */,
+				C185A3DF22B1369600E11721 /* Channel */,
 				C185A3DD22B1369600E11721 /* ProxyServer */,
 				C185A3F822B1369600E11721 /* Rule */,
 				C185A3E222B1369600E11721 /* Socket */,
@@ -243,13 +243,13 @@
 			path = ProxyServer;
 			sourceTree = "<group>";
 		};
-		C185A3DF22B1369600E11721 /* Pipe */ = {
+		C185A3DF22B1369600E11721 /* Channel */ = {
 			isa = PBXGroup;
 			children = (
-				C185A3E022B1369600E11721 /* Pipe.swift */,
+				C185A3E022B1369600E11721 /* Channel.swift */,
 				C185A3E122B1369600E11721 /* Helper.swift */,
 			);
-			path = Pipe;
+			path = Channel;
 			sourceTree = "<group>";
 		};
 		C185A3E222B1369600E11721 /* Socket */ = {
@@ -331,7 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				C185A40A22B1369600E11721 /* AdapterSocketEvent.swift */,
-				C185A40622B1369600E11721 /* PipeEvent.swift */,
+				C185A40622B1369600E11721 /* ChannelEvent.swift */,
 				C185A40722B1369600E11721 /* ProxyServerEvent.swift */,
 				C185A40522B1369600E11721 /* ProxySocketEvent.swift */,
 				C185A40822B1369600E11721 /* RuleMatchEvent.swift */,
@@ -525,7 +525,7 @@
 				C185A42D22B1369600E11721 /* ProxyServerEvent.swift in Sources */,
 				C185A41A22B1369600E11721 /* IPInterval.swift in Sources */,
 				C185A42A22B1369600E11721 /* DNSSession.swift in Sources */,
-				C185A40E22B1369600E11721 /* Pipe.swift in Sources */,
+				C185A40E22B1369600E11721 /* Channel.swift in Sources */,
 				C185A41022B1369600E11721 /* DirectAdapter.swift in Sources */,
 				C185A41D22B1369600E11721 /* UInt128.swift in Sources */,
 				50DF436E22B2230700B8D9FA /* HTTPHeader.swift in Sources */,
@@ -537,7 +537,7 @@
 				C185A42F22B1369600E11721 /* Observer.swift in Sources */,
 				C185A41E22B1369600E11721 /* GlobalIntializer.swift in Sources */,
 				C185A40F22B1369600E11721 /* Helper.swift in Sources */,
-				C185A42C22B1369600E11721 /* PipeEvent.swift in Sources */,
+				C185A42C22B1369600E11721 /* ChannelEvent.swift in Sources */,
 				C185A43222B1369600E11721 /* EventType.swift in Sources */,
 				50DF436522B2219500B8D9FA /* GCDProxyServer.swift in Sources */,
 				C185A41822B1369600E11721 /* Utils.swift in Sources */,

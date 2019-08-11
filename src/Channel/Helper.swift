@@ -2,7 +2,7 @@ import Foundation
 
 open class ConnectSession {
     public enum EventSourceEnum {
-        case proxy, adapter, pipe
+        case proxy, adapter, channel
     }
 
     // The requested host.

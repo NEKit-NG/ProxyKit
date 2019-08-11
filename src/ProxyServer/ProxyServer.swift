@@ -7,8 +7,8 @@ import Resolver
  
  This proxy does not listen on any port.
  */
-open class ProxyServer: NSObject, PipeDelegate {
-    typealias PipeArray = [Pipe]
+open class ProxyServer: NSObject, ChannelDelegate {
+    typealias ChannelArray = [Channel]
 
     /// The port of proxy server.
     public let port: IPort
@@ -28,7 +28,7 @@ open class ProxyServer: NSObject, PipeDelegate {
 
     open var observer: Observer<ProxyServerEvent>?
 
-    var pipes: PipeArray = []
+    var channels: ChannelArray = []
 
     /**
      Create an instance of proxy server.
@@ -65,8 +65,8 @@ open class ProxyServer: NSObject, PipeDelegate {
      */
     open func stop() {
         QueueFactory.executeOnQueueSynchronizedly {
-            for pipe in pipes {
-                pipe.forceClose()
+            for channel in channels {
+                channel.forceClose()
             }
 
             observer?.signal(.stopped(self))
@@ -82,26 +82,26 @@ open class ProxyServer: NSObject, PipeDelegate {
      */
     func didAcceptNewSocket(_ socket: ProxySocket) {
         observer?.signal(.newSocketAccepted(socket, onServer: self))
-        let pipe = Pipe(proxySocket: socket)
-        pipe.delegate = self
-        pipes.append(pipe)
-        pipe.openPipe()
+        let channel = Channel(proxySocket: socket)
+        channel.delegate = self
+        channels.append(channel)
+        channel.openChannel()
     }
 
-    // MARK: PipeDelegate implementation
+    // MARK: ChannelDelegate implementation
 
     /**
-     Delegate method when a pipe closed. The server will remote it internally.
+     Delegate method when a channel closed. The server will remote it internally.
      
-     - parameter pipe: The closed pipe.
+     - parameter channel: The closed channel.
      */
-    func pipeDidClose(_ pipe: Pipe) {
-        observer?.signal(.pipeClosed(pipe, onServer: self))
-        guard let index = pipes.firstIndex(of: pipe) else {
+    func channelDidClose(_ channel: Channel) {
+        observer?.signal(.channelClosed(channel, onServer: self))
+        guard let index = channels.firstIndex(of: channel) else {
             // things went strange
             return
         }
 
-        pipes.remove(at: index)
+        channels.remove(at: index)
     }
 }

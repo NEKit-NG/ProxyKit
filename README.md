@@ -55,14 +55,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 所有源代码尽可能从 NEKit 中复制，几个变化的部分包括
 
-* Tunnel 改名为 Pipe，这是为了和 NE 中的 Packet Tunnel Provider 区分开来
+* Tunnel 改名为 Channel，这是为了和 NE 中的 Packet Tunnel Provider 区分开来
 
 * Port 改名为 IPort，因为 Foundation 里面已经有了一个 Port 类型了
 
 * Utils.swift 去掉 GeoIPLookup，DNSSession.swift 去掉 countryCode
 
 * 将原 ConnectSession.swift RuleManager.swift RawSocketFactory.swift 中必要的部分
-  合并成 Helper.swift 放在 Pipe 目录下。这些都是将来需要扩展的功能
+  合并成 Helper.swift 放在 Channel 目录下。这些都是将来需要扩展的功能
 
 * 假定您在同一个目录下同时 clone 了 NEKit 和 ProxyKit，可以在 ProxyKit 下执行脚本来对比
   异同：sh script/diff.sh
@@ -81,7 +81,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * src 和 proxy 两个目录是所有源代码；极致精简的话，仅仅 src 目录就可以是基础 framework 
   了，但还是加入了 proxy 目录让 ProxyKit-Demo 能更有实际作用一些
 
-* 网络(TCP层或应用层)每成功建立一条代理路径，在代码里就是创建了一个 Pipe，Pipe 的两头分别是
+* 网络(TCP层或应用层)每成功建立一条代理路径，在代码里就是创建了一个 Channel，Channel 的两头分别是
   ProxySocket 和 AdapterSocket
 
 * ProxySocket 是代理协议的 local 端实现，比如 HTTP 代理，Socks5 代理。对于应用程序而言，

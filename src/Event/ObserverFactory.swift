@@ -5,7 +5,7 @@ open class ObserverFactory {
 
     public init() {}
 
-    open func getObserverForPipe(_ pipe: Pipe) -> Observer<PipeEvent>? {
+    open func getObserverForChannel(_ channel: Channel) -> Observer<ChannelEvent>? {
         return nil
     }
 
