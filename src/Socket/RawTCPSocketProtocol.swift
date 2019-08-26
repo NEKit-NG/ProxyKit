@@ -1,4 +1,5 @@
 import Foundation
+import IPStack
 
 /// The raw socket protocol which represents a TCP socket.
 ///

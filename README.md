@@ -12,12 +12,13 @@ NEKit 是我最近工作中所严重依赖的开源项目；NEKit 非常成熟�
 去年以来也仅仅只有一次 Swift 5.0 的兼容升级。所以冒昧得将新项目取名为 NEKit-NG，同时希望
 这个仓库在未来能成为红鱼工作的一个重要基础
 
-预计 NEKit 分拆为 ProxyKit、AdapterManager、PacketKit 等三部分；也可能会继续分拆出一
+预计 NEKit 分拆为 IPStack、ProxyKit、AdapterManager 等三部分；也可能会继续分拆出一
 个 ResolverKit
 
 NEKit-NG 基于 Swift 5；采用 Carthage 管理依赖
 
-ProxyKit 是代理应用的核心，理解 NEKit-NG 或者说 NEKit 应该从这里开始
+ProxyKit 是代理应用的核心，理解 NEKit-NG 或者说 NEKit 应该从这里开始。红鱼的已上架应用
+"HTTPS抓包" 即基于 ProxyKit 开发
 
 ## 第一部分：许可协议
 
@@ -57,7 +58,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 * Tunnel 改名为 Channel，这是为了和 NE 中的 Packet Tunnel Provider 区分开来
 
-* Port 改名为 IPort，因为 Foundation 里面已经有了一个 Port 类型了
+* Port 改名为 IPort，因为 Foundation 里面已经有了一个 Port 类型了；实现在 IPStack 项目
 
 * Utils.swift 去掉 GeoIPLookup，DNSSession.swift 去掉 countryCode
 

@@ -1,5 +1,6 @@
 import Foundation
 import CocoaAsyncSocket
+import IPStack
 
 /// The TCP socket build upon `GCDAsyncSocket`.
 ///

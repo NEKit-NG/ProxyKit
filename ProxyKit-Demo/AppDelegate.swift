@@ -9,6 +9,7 @@
 import UIKit
 import ProxyKit
 import CocoaLumberjackSwift
+import IPStack
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

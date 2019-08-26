@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		508EF8CB23136EA000263B80 /* IPStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508EF8CA23136EA000263B80 /* IPStack.framework */; };
 		50DF436322B2219500B8D9FA /* GCDHTTPProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF436022B2219500B8D9FA /* GCDHTTPProxyServer.swift */; };
 		50DF436422B2219500B8D9FA /* GCDSOCKS5ProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF436122B2219500B8D9FA /* GCDSOCKS5ProxyServer.swift */; };
 		50DF436522B2219500B8D9FA /* GCDProxyServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF436222B2219500B8D9FA /* GCDProxyServer.swift */; };
@@ -26,13 +27,7 @@
 		C185A41422B1369600E11721 /* GCDTCPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3E922B1369600E11721 /* GCDTCPSocket.swift */; };
 		C185A41522B1369600E11721 /* ProxySocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3EB22B1369600E11721 /* ProxySocket.swift */; };
 		C185A41622B1369600E11721 /* SocketProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3EC22B1369600E11721 /* SocketProtocol.swift */; };
-		C185A41722B1369600E11721 /* BinaryDataScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3EE22B1369600E11721 /* BinaryDataScanner.swift */; };
 		C185A41822B1369600E11721 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3EF22B1369600E11721 /* Utils.swift */; };
-		C185A41922B1369600E11721 /* IPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F022B1369600E11721 /* IPAddress.swift */; };
-		C185A41A22B1369600E11721 /* IPInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F122B1369600E11721 /* IPInterval.swift */; };
-		C185A41B22B1369600E11721 /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F222B1369600E11721 /* Checksum.swift */; };
-		C185A41C22B1369600E11721 /* IPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F322B1369600E11721 /* IPort.swift */; };
-		C185A41D22B1369600E11721 /* UInt128.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F422B1369600E11721 /* UInt128.swift */; };
 		C185A41E22B1369600E11721 /* GlobalIntializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F522B1369600E11721 /* GlobalIntializer.swift */; };
 		C185A41F22B1369600E11721 /* QueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F622B1369600E11721 /* QueueFactory.swift */; };
 		C185A42022B1369600E11721 /* Opt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3F722B1369600E11721 /* Opt.swift */; };
@@ -41,10 +36,6 @@
 		C185A42322B1369600E11721 /* DNSSessionMatchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3FB22B1369600E11721 /* DNSSessionMatchType.swift */; };
 		C185A42422B1369600E11721 /* DirectRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3FC22B1369600E11721 /* DirectRule.swift */; };
 		C185A42522B1369600E11721 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3FD22B1369600E11721 /* Rule.swift */; };
-		C185A42622B1369600E11721 /* DNSEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A3FF22B1369600E11721 /* DNSEnums.swift */; };
-		C185A42722B1369600E11721 /* IPPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40022B1369600E11721 /* IPPacket.swift */; };
-		C185A42822B1369600E11721 /* DNSMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40122B1369600E11721 /* DNSMessage.swift */; };
-		C185A42922B1369600E11721 /* PacketProtocolParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40222B1369600E11721 /* PacketProtocolParser.swift */; };
 		C185A42A22B1369600E11721 /* DNSSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40322B1369600E11721 /* DNSSession.swift */; };
 		C185A42B22B1369600E11721 /* ProxySocketEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40522B1369600E11721 /* ProxySocketEvent.swift */; };
 		C185A42C22B1369600E11721 /* ChannelEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185A40622B1369600E11721 /* ChannelEvent.swift */; };
@@ -69,6 +60,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		508EF8CA23136EA000263B80 /* IPStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IPStack.framework; path = Carthage/Build/iOS/IPStack.framework; sourceTree = "<group>"; };
 		50DF436022B2219500B8D9FA /* GCDHTTPProxyServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDHTTPProxyServer.swift; sourceTree = "<group>"; };
 		50DF436122B2219500B8D9FA /* GCDSOCKS5ProxyServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDSOCKS5ProxyServer.swift; sourceTree = "<group>"; };
 		50DF436222B2219500B8D9FA /* GCDProxyServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDProxyServer.swift; sourceTree = "<group>"; };
@@ -90,13 +82,7 @@
 		C185A3E922B1369600E11721 /* GCDTCPSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDTCPSocket.swift; sourceTree = "<group>"; };
 		C185A3EB22B1369600E11721 /* ProxySocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySocket.swift; sourceTree = "<group>"; };
 		C185A3EC22B1369600E11721 /* SocketProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketProtocol.swift; sourceTree = "<group>"; };
-		C185A3EE22B1369600E11721 /* BinaryDataScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryDataScanner.swift; sourceTree = "<group>"; };
 		C185A3EF22B1369600E11721 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		C185A3F022B1369600E11721 /* IPAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddress.swift; sourceTree = "<group>"; };
-		C185A3F122B1369600E11721 /* IPInterval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPInterval.swift; sourceTree = "<group>"; };
-		C185A3F222B1369600E11721 /* Checksum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
-		C185A3F322B1369600E11721 /* IPort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPort.swift; sourceTree = "<group>"; };
-		C185A3F422B1369600E11721 /* UInt128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UInt128.swift; sourceTree = "<group>"; };
 		C185A3F522B1369600E11721 /* GlobalIntializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalIntializer.swift; sourceTree = "<group>"; };
 		C185A3F622B1369600E11721 /* QueueFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueFactory.swift; sourceTree = "<group>"; };
 		C185A3F722B1369600E11721 /* Opt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Opt.swift; sourceTree = "<group>"; };
@@ -105,10 +91,6 @@
 		C185A3FB22B1369600E11721 /* DNSSessionMatchType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSSessionMatchType.swift; sourceTree = "<group>"; };
 		C185A3FC22B1369600E11721 /* DirectRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectRule.swift; sourceTree = "<group>"; };
 		C185A3FD22B1369600E11721 /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
-		C185A3FF22B1369600E11721 /* DNSEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSEnums.swift; sourceTree = "<group>"; };
-		C185A40022B1369600E11721 /* IPPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPPacket.swift; sourceTree = "<group>"; };
-		C185A40122B1369600E11721 /* DNSMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSMessage.swift; sourceTree = "<group>"; };
-		C185A40222B1369600E11721 /* PacketProtocolParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketProtocolParser.swift; sourceTree = "<group>"; };
 		C185A40322B1369600E11721 /* DNSSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSSession.swift; sourceTree = "<group>"; };
 		C185A40522B1369600E11721 /* ProxySocketEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxySocketEvent.swift; sourceTree = "<group>"; };
 		C185A40622B1369600E11721 /* ChannelEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelEvent.swift; sourceTree = "<group>"; };
@@ -136,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508EF8CB23136EA000263B80 /* IPStack.framework in Frameworks */,
 				C185A43822B1398000E11721 /* CocoaLumberjack.framework in Frameworks */,
 				C185A43922B1398000E11721 /* Resolver.framework in Frameworks */,
 				C185A43A22B1398000E11721 /* CocoaAsyncSocket.framework in Frameworks */,
@@ -156,17 +139,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		50DF435E22B20D1A00B8D9FA /* Packet */ = {
-			isa = PBXGroup;
-			children = (
-				C185A40022B1369600E11721 /* IPPacket.swift */,
-				C185A40222B1369600E11721 /* PacketProtocolParser.swift */,
-				C185A3EE22B1369600E11721 /* BinaryDataScanner.swift */,
-				C185A3F222B1369600E11721 /* Checksum.swift */,
-			);
-			path = Packet;
-			sourceTree = "<group>";
-		};
 		50DF435F22B20F4600B8D9FA /* proxy */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,10 +266,6 @@
 			isa = PBXGroup;
 			children = (
 				C185A3EF22B1369600E11721 /* Utils.swift */,
-				C185A3F022B1369600E11721 /* IPAddress.swift */,
-				C185A3F122B1369600E11721 /* IPInterval.swift */,
-				C185A3F322B1369600E11721 /* IPort.swift */,
-				C185A3F422B1369600E11721 /* UInt128.swift */,
 				C185A3F522B1369600E11721 /* GlobalIntializer.swift */,
 				C185A3F622B1369600E11721 /* QueueFactory.swift */,
 			);
@@ -319,10 +287,7 @@
 		C185A3FE22B1369600E11721 /* DNSSession */ = {
 			isa = PBXGroup;
 			children = (
-				50DF435E22B20D1A00B8D9FA /* Packet */,
 				C185A40322B1369600E11721 /* DNSSession.swift */,
-				C185A3FF22B1369600E11721 /* DNSEnums.swift */,
-				C185A40122B1369600E11721 /* DNSMessage.swift */,
 			);
 			path = DNSSession;
 			sourceTree = "<group>";
@@ -345,6 +310,7 @@
 		C185A43322B1398000E11721 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				508EF8CA23136EA000263B80 /* IPStack.framework */,
 				C185A43622B1398000E11721 /* CocoaAsyncSocket.framework */,
 				C185A43422B1398000E11721 /* CocoaLumberjack.framework */,
 				C185A43722B1398000E11721 /* CocoaLumberjackSwift.framework */,
@@ -500,22 +466,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C185A41922B1369600E11721 /* IPAddress.swift in Sources */,
-				C185A41B22B1369600E11721 /* Checksum.swift in Sources */,
 				C185A41122B1369600E11721 /* AdapterSocket.swift in Sources */,
 				50DF437022B2232A00B8D9FA /* HTTPURL.swift in Sources */,
 				C185A42122B1369600E11721 /* DNSSessionMatchResult.swift in Sources */,
 				50DF436422B2219500B8D9FA /* GCDSOCKS5ProxyServer.swift in Sources */,
-				C185A42622B1369600E11721 /* DNSEnums.swift in Sources */,
-				C185A42822B1369600E11721 /* DNSMessage.swift in Sources */,
 				C185A42022B1369600E11721 /* Opt.swift in Sources */,
 				C185A43022B1369600E11721 /* AdapterSocketEvent.swift in Sources */,
 				50DF436322B2219500B8D9FA /* GCDHTTPProxyServer.swift in Sources */,
 				C185A40D22B1369600E11721 /* ProxyServer.swift in Sources */,
 				C185A42522B1369600E11721 /* Rule.swift in Sources */,
 				C185A42422B1369600E11721 /* DirectRule.swift in Sources */,
-				C185A41C22B1369600E11721 /* IPort.swift in Sources */,
-				C185A41722B1369600E11721 /* BinaryDataScanner.swift in Sources */,
 				C185A42E22B1369600E11721 /* RuleMatchEvent.swift in Sources */,
 				C185A41622B1369600E11721 /* SocketProtocol.swift in Sources */,
 				C185A41322B1369600E11721 /* RawTCPSocketProtocol.swift in Sources */,
@@ -523,13 +483,10 @@
 				C185A41422B1369600E11721 /* GCDTCPSocket.swift in Sources */,
 				50DF436C22B2223100B8D9FA /* HTTPStreamScanner.swift in Sources */,
 				C185A42D22B1369600E11721 /* ProxyServerEvent.swift in Sources */,
-				C185A41A22B1369600E11721 /* IPInterval.swift in Sources */,
 				C185A42A22B1369600E11721 /* DNSSession.swift in Sources */,
 				C185A40E22B1369600E11721 /* Channel.swift in Sources */,
 				C185A41022B1369600E11721 /* DirectAdapter.swift in Sources */,
-				C185A41D22B1369600E11721 /* UInt128.swift in Sources */,
 				50DF436E22B2230700B8D9FA /* HTTPHeader.swift in Sources */,
-				C185A42922B1369600E11721 /* PacketProtocolParser.swift in Sources */,
 				C185A43122B1369600E11721 /* ObserverFactory.swift in Sources */,
 				C185A41522B1369600E11721 /* ProxySocket.swift in Sources */,
 				C185A41222B1369600E11721 /* AdapterFactory.swift in Sources */,
@@ -541,7 +498,6 @@
 				C185A43222B1369600E11721 /* EventType.swift in Sources */,
 				50DF436522B2219500B8D9FA /* GCDProxyServer.swift in Sources */,
 				C185A41822B1369600E11721 /* Utils.swift in Sources */,
-				C185A42722B1369600E11721 /* IPPacket.swift in Sources */,
 				C185A42B22B1369600E11721 /* ProxySocketEvent.swift in Sources */,
 				50DF436822B221EB00B8D9FA /* SOCKS5ProxySocket.swift in Sources */,
 				C185A41F22B1369600E11721 /* QueueFactory.swift in Sources */,
@@ -705,6 +661,7 @@
 		C185A3DA22B1359C00E11721 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -734,6 +691,7 @@
 		C185A3DB22B1359C00E11721 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

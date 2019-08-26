@@ -1,4 +1,5 @@
 import Foundation
+import IPStack
 
 /// The SOCKS5 proxy server.
 public final class GCDSOCKS5ProxyServer: GCDProxyServer {

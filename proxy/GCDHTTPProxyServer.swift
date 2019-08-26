@@ -1,4 +1,5 @@
 import Foundation
+import IPStack
 
 /// The HTTP proxy server.
 public final class GCDHTTPProxyServer: GCDProxyServer {

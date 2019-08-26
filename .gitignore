@@ -2,3 +2,4 @@ Cartfile.resolved
 Carthage
 
 xcuserdata
+.DS_Store

@@ -1,6 +1,7 @@
 import Foundation
 import CocoaAsyncSocket
 import Resolver
+import IPStack
 
 /**
  The base proxy server class.
